@@ -1,5 +1,10 @@
 # SQL-Challenge
-This Challenge is divided into three parts: 
+
+This challenge is to do a research project about the people whom Pewlett Hackard employed during the 1980s and 1990s. All that remains of the employee database from that period are six CSV files.
+
+For this project, I designed the tables to hold the data from the CSV files, imported the CSV files into a SQL database, and then answered the questions below about the data.
+
+This task is divided into three parts: 
 * data modeling 
 * data engineering
 * data analysis
