@@ -11,7 +11,7 @@ This task is divided into three parts:
 
 **Data Modeling** 
 * Inspect the CSV files, and sketch an Entity Relationship Diagram of the tables. 
-*![Entity Relationship Diagram - Pewlett Hackard](<ERD Pewlett Hackard - Final.png>)
+*![Entity Relationship Diagram - Pewlett Hackard](<QuickDBD-ERD Pewlett Hackard .png>)
 
 **Data Engineering**
 * Use the provided information to create a table schema for each of the six CSV files. 
