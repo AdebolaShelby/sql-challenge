@@ -9,11 +9,11 @@ CREATE TABLE "departments" (
 CREATE TABLE "employees" (
     "emp_no" int   NOT NULL,
     "emp_title_id" varchar(10)   NOT NULL,
-    "birth_date" varchar(20),
+    "birth_date" date   NOT NULL,
     "first_name" varchar(50)   NOT NULL,
     "last_name" varchar(50)   NOT NULL,
     "sex" varchar(1)   NOT NULL,
-    "hire_date" varchar(20),
+    "hire_date" date   NOT NULL,
     CONSTRAINT "pk_employees" PRIMARY KEY (
         "emp_no"
      )
@@ -103,5 +103,3 @@ COPY salaries(emp_no, salary)
 FROM 'C:\data\salaries.csv'
 DELIMITER ','
 CSV HEADER;
-
-

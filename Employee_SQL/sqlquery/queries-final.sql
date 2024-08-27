@@ -1,5 +1,11 @@
 ---confirm rows count---
 SELECT COUNT(*) FROM employees;
+SELECT COUNT(*) FROM departments;
+SELECT COUNT(*) FROM dept_emp;
+SELECT COUNT(*) FROM dept_manager;
+SELECT COUNT(*) FROM salaries;
+SELECT COUNT(*) FROM titles;
+
 
 --List the employee number, last name, first name, sex, and salary of each employee.--
 
@@ -21,7 +27,7 @@ SELECT
 	e.last_name,
 	e.hire_date
 FROM employees e
-WHERE e.hire_date LIKE '%1986'
+	WHERE e.hire_date BETWEEN '1/1/1986' AND '12/31/1986'
 	ORDER BY e.hire_date;
 
 --List the manager of each department along with their department number, department name, employee number, last name, and first name.
@@ -60,6 +66,7 @@ where e.first_name = 'Hercules' AND last_name LIKE 'B%'
 --List each employee in the Sales department, including their employee number, last name, and first name.
 SELECT * 
 	FROM departments d;
+
 -- The department number of Sales department is d007
 SELECT 
 	e.emp_no, 
@@ -84,7 +91,8 @@ JOIN departments d ON dem.dept_no = d.dept_no
 WHERE d.dept_no = 'd005' or d.dept_no = 'd007';
 
 --List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
-SELECT last_name, COUNT(last_name) AS "Frequency count"
+SELECT last_name, 
+	COUNT(last_name) AS "Frequency count"
 FROM employees
 GROUP BY last_name
 ORDER BY "Frequency count" DESC;
