@@ -53,7 +53,7 @@ SELECT
     d.dept_name
 FROM employees e
 JOIN dept_emp dem ON e.emp_no = dem.emp_no
-JOIN departments d ON dem.dept_no = d.dept_no
+JOIN departments d ON dem.dept_no = d.dept_no;
 
 --List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
 SELECT
@@ -61,7 +61,7 @@ SELECT
 	e.last_name,
 	e.sex
 FROM employees e
-where e.first_name = 'Hercules' AND last_name LIKE 'B%'
+where e.first_name = 'Hercules' AND last_name LIKE 'B%';
 
 --List each employee in the Sales department, including their employee number, last name, and first name.
 SELECT * 
